@@ -6,6 +6,7 @@
   "keywords": [],
   "dependencies": {
     "express": "^4.9.5",
-    "jade": "^1.7.0"
+    "mongoose": "^4.0.5",
+    "bcrypt-nodejs": "~0.0.3"
   }
 }

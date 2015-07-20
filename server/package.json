@@ -14,7 +14,6 @@
   "devDependencies": {
     "nodemon": "^1.2.1",
     "tape": "^3.0.0",
-    "marklogic": "^1.0.3",
     "body-parser": "^1.13.2"
   }
 }

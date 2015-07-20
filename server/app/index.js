@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 // routes
-app.use(require('./modules/dashboard/routes.js'))
-app.use(require('./modules/exams/routes.js'))
+app.use(require('./modules/users/routes.js'))
+app.use(require('./modules/sessions/routes.js'))
 
 // custom error interceptor
 app.use(require('./interceptors/notFound'))
