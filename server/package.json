@@ -1,0 +1,20 @@
+{
+  "name": "structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node bin/preinstall.js",
+    "start": "nodemon .",
+    "production": "NODE_ENV=production nodemon .",
+    "test": "tape \"lib/*/test/*-test.js\"",
+    "debug": "node --debug server.js"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^1.2.1",
+    "tape": "^3.0.0",
+    "marklogic": "^1.0.3",
+    "body-parser": "^1.13.2"
+  }
+}

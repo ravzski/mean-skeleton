@@ -1,0 +1,16 @@
+{
+  "port": 3000,
+  "greeting": "hello world",
+  "graylog": {
+    "host": "localhost",
+    "stdout": true
+  },
+  "connection": {
+    "database": "Documents", 
+    "host": "localhost",     
+    "port": "8000",           
+    "user": "admin",        
+    "password": "admin",  
+    "authType": "DIGEST"     
+  }
+}
