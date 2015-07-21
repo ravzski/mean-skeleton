@@ -1,12 +1,16 @@
-var env = process.env.NODE_ENV || 'development'
-var resolve = require('path').resolve
+'use strict';
 
-// env specific config
-var cfg = require('./env/'+env)
-cfg.env = env
+var dotenv = require('dotenv');  
+dotenv.load();
 
-// // env agnostic config
-// cfg.pubDir = resolve(__dirname, '../../public')
-// cfg.viewDir = resolve(__dirname, '../views')
 
-module.exports = cfg
+var config = {};
+
+// port
+config.port = process.env.PORT || 3000;
+
+// database
+config.mongodb        = {};
+config.mongodb.url    = process.env.MONGODB_URL || 'localhost';
+
+module.exports = config;

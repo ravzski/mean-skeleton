@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "node bin/preinstall.js",
     "start": "nodemon .",
     "production": "NODE_ENV=production nodemon .",
     "test": "tape \"lib/*/test/*-test.js\"",
@@ -13,7 +12,14 @@
   "keywords": [],
   "devDependencies": {
     "nodemon": "^1.2.1",
-    "tape": "^3.0.0",
+    "tape": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.9.5",
+    "mongoose": "^4.0.5",
+    "bcrypt-nodejs": "~0.0.3",
+    "dotenv": "~1.1.0",
+    "helmet": "^0.9.1",
     "body-parser": "^1.13.2"
   }
 }
