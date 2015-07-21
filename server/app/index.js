@@ -18,6 +18,6 @@ app.use(require('./modules/users/routes.js'))
 app.use(require('./modules/sessions/routes.js'))
 
 // custom error interceptor
-app.use(require('./interceptors/notFound'))
-app.use(require('./interceptors/handleError'))
+app.use(require('./interceptors/404'))
+app.use(require('./interceptors/500'))
 module.exports = app
