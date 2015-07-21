@@ -20,8 +20,8 @@ app.use(require('./modules/users/routes.js'));
 app.use(require('./modules/sessions/routes.js'));
 
 // custom error interceptor
-app.use(require('./interceptors/404'));
-app.use(require('./interceptors/500'));
+app.use(require('./modules/interceptors/404.js'));
+app.use(require('./modules/interceptors/500.js'));
 
 // Security Settings
 app.disable('x-powered-by');          // Don't advertise our server type
