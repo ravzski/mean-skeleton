@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 // routes
+app.use(require('./modules/base/routes.js'))
 app.use(require('./modules/users/routes.js'))
 app.use(require('./modules/sessions/routes.js'))
 
