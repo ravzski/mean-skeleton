@@ -1,7 +1,10 @@
-angular.module 'client', [
-  'ngAnimate',
-  'ngCookies',
-  'ngTouch',
-  'ngSanitize',
-  'ngResource',
-  'ui.router']
+angular.module 'client',
+  [
+    'ngAnimate',
+    'ngCookies',
+    'ngTouch',
+    'ngSanitize',
+    'ngResource',
+    'ui.router',
+    'Session'
+  ]

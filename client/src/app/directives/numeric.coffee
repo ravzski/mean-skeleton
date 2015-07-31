@@ -1,4 +1,4 @@
-angular.module("scm").directive 'numeric', ->
+angular.module("client").directive 'numeric', ->
   {
     restrict: 'A'
     require: 'ngModel'
@@ -8,7 +8,7 @@ angular.module("scm").directive 'numeric', ->
         arr = String(newValue).split('')
 
         newValue = "" if newValue is undefined
-        
+
         if arr.length == 0
           return
         if arr.length == 1 and (arr[0] == '-' or arr[0] == '.')

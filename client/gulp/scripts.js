@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var conf = require('./conf');
 
 var browserSync = require('browser-sync');
+var concat = require('gulp-concat');
 
 var $ = require('gulp-load-plugins')();
 
